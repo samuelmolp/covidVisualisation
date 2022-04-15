@@ -15,6 +15,7 @@ Maps from: https://www.naturalearthdata.com/downloads/10m-cultural-vectors/
 Special thanks to: https://www.relataly.com/visualize-covid-19-data-on-a-geographic-heat-maps/291/
 
 ## FILES OVERVIEW
+All images and videos have been deleted due to maximun space requirements. To see them, please go to the web application. 
 
 * Getdata.py: this file obtains the data from the API stated above (la narrativa) and outputs the data into a GENERAL.JSON file. In that json, each key is a date that has associated another dictionary of country:cases (that day). Specific json files for each day are also created and can be found at /JSONS. This was done to prevent needing API calls when using the API as the result is too slow. 
 * Utils.py: this file obtains some arrays necessary in main.py. It obtains all iso2 and iso3 codes and creates a dict matching them to the population. 
