@@ -1,0 +1,51 @@
+{% extends 'visualitation/layout.html'%}
+{% load static %}
+
+
+{% block css %}<link href="{% static 'visualitation/stats.css' %}" rel="stylesheet">{%endblock%}
+{% block js %}
+<script src="{% static 'visualitation/stats.js' %}"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.min.js"></script>
+{%endblock%}
+
+
+{% block body %}
+
+<div class="content">
+    <h1 class="title">Dynamic covid charts</h1>
+
+    <form id="filtersForm">
+        <label for="typeSelect">Select a type: </label>
+        <select id="typeSelect">
+            <option selected>Cases by 100.000 people in last 5 days </option>
+            <option>Daily cases by 100.000 people</option>
+            <option>Daily cases</option>
+        </select>
+
+
+        <label for="regionSelect">Region:</label>
+        <select id="regionSelect">
+            <option selected>World</option>
+            <option>Africa</option>
+            <option>Asia</option>
+            <option>South America</option>
+            <option>North America</option>
+            <option>Oceania</option>
+            <option>Europe</option>
+        </select>
+
+        <label for="start_date">Start date: </label>
+        <input id="start_date" type="date" value="2020-02-01">
+
+        <label for="end_date">End date: </label>
+        <input id="end_date" type="date" value="2022-03-04">
+
+        <input type="submit" class="submit">
+    </form>
+
+    <div>
+        <canvas id="myChart"></canvas>
+    </div>
+</div>
+
+{%endblock%}

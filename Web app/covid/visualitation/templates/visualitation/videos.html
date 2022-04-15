@@ -1,0 +1,49 @@
+{% extends 'visualitation/layout.html'%}ç
+{% load static %}
+
+
+{% block css %}
+<link href="{% static 'visualitation/images_videos.css' %}" rel="stylesheet">{%endblock%}
+{% block js %}
+<script src="{% static 'visualitation/videos.js' %}"></script>{%endblock%}
+
+
+{% block body %}
+
+<div class="content">
+    <h1 class="title">COVID EVOLUTION VIDEOS</h1>
+    <div id="videoFilters" class="filters">
+        <div>
+            <label for="videoTypeSelect" style="color: white;">Select a video: </label>
+            <select id="videoTypeSelect">
+                <option selected>Daily cases by 100.000 people</option>
+                <option>Cases by 100.000 people in last 5 days </option>
+                <option>Daily cases</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="regionSelectVideo" style="color: white;">Select a region:</label>
+            <select id="regionSelectVideo">
+                <option selected>World</option>
+                <option>Africa</option>
+                <option>Asia</option>
+                <option>South America</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="videoSpeedInput" style="color: white;">Change speed</label>
+            <select id="videoSpeedInput">
+                <option>x0.5</option>
+                <option selected>x1 (normal)</option>
+                <option>x2</option>
+                <option>x3</option>
+                <option>x5</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="videos loaded_content" id="videoLoaded"></div>
+</div>
+{% endblock %}

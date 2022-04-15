@@ -1,0 +1,46 @@
+{% extends 'visualitation/layout.html'%}
+{% load static %}
+
+
+{% block css %}<link href="{% static 'visualitation/images_videos.css' %}" rel="stylesheet">{%endblock%}
+{% block js %}<script src="{% static 'visualitation/images.js' %}"></script>{%endblock%}
+
+
+{% block body %}
+
+<div class="content">
+
+<h1 class="title">HISTORICAL COVID MAPS</h1>
+    <div id="imageFilters" class="filters">
+        <form class="dateFilterform" >
+            <label for="imageTypeSelect" style="color: white;">Select a type:  </label>
+            <select id="imageTypeSelect">
+                <option selected>Daily cases by 100.000 people</option>
+                <option>Cases by 100.000 people in last 5 days </option>
+                <option>Daily cases</option>
+            </select>
+            <div class="dateFilterDiv">
+                <label for="dateFilter" style="color: white;">Enter a date between 2020-01-23 and 2022-03-04</label>
+                <input type="date" id="dateFilter" value="2021-01-01" id="dateFilter">
+            </div>
+
+            <div>
+                <label for="regionSelectImage" style="color: white;">Select a region:</label>
+                <select id="regionSelectIMage">
+                    <option selected>World</option>
+                    <option>Africa</option>
+                    <option>Asia</option>
+                    <option>South America</option>
+                </select>
+            </div>
+
+            <div class="submitDiv">
+                <input type="submit" value="SUBMIT" id="submitButton">
+            </div>
+        </form>
+    </div>
+
+    <div class="loaded_content images"></div>
+</div>
+
+{% endblock %}

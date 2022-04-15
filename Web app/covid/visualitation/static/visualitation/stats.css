@@ -1,0 +1,38 @@
+.content {
+    background-color: grey;
+    padding-bottom: 10vh;
+    min-height: 100vh;
+}
+
+
+label {
+    color: white;
+}
+
+canvas {
+    height: 90vh !important;
+    width: 90vw !important;
+    margin-left: 5vw;
+    background-color: white; 
+    margin-top: 7vh;
+}
+
+.title {
+    padding-top: 5vh;
+    padding-left: 5vw;
+}
+
+#filtersForm {
+    padding-left: 3vw;
+    padding-top: 2vh;
+}
+
+.submit{
+    margin-left: 2vw;
+}
+
+@media only screen and (max-width:1000px){
+    canvas {
+        max-height: 60vh !important;
+    }
+}

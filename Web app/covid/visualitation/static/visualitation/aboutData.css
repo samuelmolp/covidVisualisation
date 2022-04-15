@@ -1,0 +1,43 @@
+.content {
+    background-color: grey;
+    min-height: 100vh;
+    padding-bottom: 10vh;
+}
+
+
+h1 {
+    padding-left: 5vw;
+    padding-top: 5vh;
+}
+
+h5 {
+    padding-left: 3vw;
+    padding-top: 2vh;
+    text-align: justify;
+    max-width: 90vw;
+}
+
+.text {
+    padding-left: 3vw;
+    max-width: 94vw;
+    text-align: justify;
+    padding-top: 3vh;
+}
+
+.link {
+    color: rgba(255, 255, 255, 0.913);
+}
+
+.list {
+    margin-top: -10px;
+}
+
+@media only screen and (max-width:1000px){
+    h1 {
+        text-align: center;
+    }
+
+    h5 {
+        font-size: 1em;
+    }
+}

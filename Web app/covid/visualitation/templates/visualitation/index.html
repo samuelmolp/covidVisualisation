@@ -1,0 +1,14 @@
+{% extends 'visualitation/layout.html'%}
+{% load static %}
+
+{% block css %}<link href="{% static 'visualitation/index.css' %}" rel="stylesheet">{%endblock%}
+
+
+{% block body %}
+
+<div class="mainDiv">
+    <img src="{% static 'visualitation/indexImg.jpg'%}">
+    <h1>COVID VISUALITATION TOOL</h1>
+    <p class="subtitle">Visualize covid data with graphics, maps or even videos</p>
+</div>
+{% endblock %}

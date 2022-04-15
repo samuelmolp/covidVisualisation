@@ -1,0 +1,33 @@
+{% extends 'visualitation/layout.html'%}
+{% load static %}
+
+{% block css %}<link href="{% static 'visualitation/aboutData.css' %}" rel="stylesheet">{%endblock%}
+
+{% block body %}
+
+<div class="content">
+    <h1>About this data</h1>
+    <h5>In this article we will briefly overview how the data from this webapp is obtained:</h5>
+    <div class="text">
+        <p>All codes from this application can be obtained in this github repository: <a class="link" href="#">TODO</a></p>
+        <p>For more technical explanation please reference here: <a class="link" href="#">TODO</a></p>
+        <p>Covid cases were obtained using this API: <a class="link" href="https://covid19tracking.narrativa.com/">https://covid19tracking.narrativa.com/</a> This API obtains the data from different sources including:</p>
+        <ul class="list">
+            <li>Ministerio de sanidad</li>
+            <li>Dipartimento della Protezione Civile de Italia</li>
+            <li>Robert Koch Institute de Alemania</li>
+            <li>Santé public France</li>
+            <li>Johns Hopkins University</li>
+        </ul>
+        <p>The maps to plot the data were obtained from: <a class="link" href="https://www.naturalearthdata.com/downloads/10m-cultural-vectors/">https://www.naturalearthdata.com/downloads/10m-cultural-vectors/</a></p>
+        <p>Population data was obtained from this API: <a class="link" href="https://pypi.org/project/countryinfo/">https://pypi.org/project/countryinfo/</a></p>
+        <p>Data was processed and then stored in a json file that can be obtained in the github repository stated above.  After that, all maps were created using python (specifically it was created with geopandas which is a variation of matplotlib). Then, videos were also created automatically. All parameters like the cases by 100.000 people were also created by a script. </p>
+        <p>Finally, this web application is just a user-friendly way of consulting all of this existing data that was created (the application is created with Django and Js).</p>
+        <br>
+        <p>Special thanks to: <a class="link" href="https://www.relataly.com/visualize-covid-19-data-on-a-geographic-heat-maps/291/">https://www.relataly.com/visualize-covid-19-data-on-a-geographic-heat-maps/291/</a></p>
+    </div>
+</div>
+
+
+
+{% endblock %}
