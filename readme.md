@@ -1,6 +1,6 @@
 # COVID VISUALISATION TOOL
 
-This is a covid visualisation tool. The end result can be found in this url: The end result can be found in this url: This url is no longer available. To see results download the project and run in development mode
+This is a covid visualisation tool. The end result can be found in this url: This url is no longer available. To see results please reference "installation guide" at the end of the readme.
 
 ## OVERVIEW
 In this web application users can view data in several ways:
@@ -15,7 +15,7 @@ Maps from: https://www.naturalearthdata.com/downloads/10m-cultural-vectors/
 Special thanks to: https://www.relataly.com/visualize-covid-19-data-on-a-geographic-heat-maps/291/
 
 ## FILES OVERVIEW
-All images and videos have been deleted due to maximun space requirements. To see them, please go to the web application. 
+All static images and videos can be found at /videos and /images.
 
 * Getdata.py: this file obtains the data from the API stated above (la narrativa) and outputs the data into a GENERAL.JSON file. In that json, each key is a date that has associated another dictionary of country:cases (that day). Specific json files for each day are also created and can be found at /JSONS. This was done to prevent needing API calls when using the API as the result is too slow. 
 * Utils.py: this file obtains some arrays necessary in main.py. It obtains all iso2 and iso3 codes and creates a dict matching them to the population. 
@@ -31,3 +31,9 @@ All images and videos have been deleted due to maximun space requirements. To se
     * Templates for all urls (index, videos, images, charts and aboutData) and a layout
     * Css for all urls
 
+## Installation guide
+
+The url is no longer active. Therefore, in order to see results follow the following steps:
+1. Download the code and install requirements with pip install -r requirement.txt
+2. Copy the /images and /video directories into /webapplication/covid/visualitation/static. (Images and videos were deleted there to avoid repetition and due to maximun size requirements in repositories). 
+3. Run the application with python manage.py runserver
