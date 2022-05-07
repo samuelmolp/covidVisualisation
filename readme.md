@@ -1,6 +1,6 @@
 # COVID VISUALISATION TOOL
 
-This is a covid visualisation tool. The end result can be found in this url: TODO
+This is a covid visualisation tool. The end result can be found in this url: This url is no longer available. To see results download the project and run in development mode
 
 ## OVERVIEW
 In this web application users can view data in several ways:
