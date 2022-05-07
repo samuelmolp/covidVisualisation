@@ -37,3 +37,5 @@ The url is no longer active. Therefore, in order to see results follow the follo
 1. Download the code and install requirements with pip install -r requirement.txt
 2. Copy the /images and /video directories into /webapplication/covid/visualitation/static. (Images and videos were deleted there to avoid repetition and due to maximun size requirements in repositories). 
 3. Run the application with python manage.py runserver
+
+If you just want to see the videos or images, you can download /videos and/or /images
