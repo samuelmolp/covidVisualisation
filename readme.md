@@ -7,7 +7,7 @@ The videos and images from the start of 2020 to 2022 can be found in this reposi
 ## OVERVIEW
 In this web application users can view data in several ways:
 * Videos of the evolution of covid in a continent (not all continents are supported). You can view the cases, cases by 100.000 people and average cases by 100.000 people in last 5 days
-* Charts: charts are made automatically based on the requested parameters to compare between regions and days
+* Charts: charts are made automatically based on the requested parameters to compare between regions and periods of time
 * Maps: you can search for all images created. Each image is from a single day. Here can be found an example:
 
 ![Example](/images/images/world/5days_relative_cases/2021-08-31.png)
