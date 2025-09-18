@@ -33,6 +33,7 @@ Special thanks to: https://www.relataly.com/visualize-covid-19-data-on-a-geograp
 The url is no longer active. Therefore, in order to see results follow the following steps:
 1. Download the code and install requirements with pip install -r requirement.txt
 2. Copy /images and /video directories into /webapplication/covid/visualitation/static or create them by running getdata.py and main.py so that they are up to the current day 
-3. Run the application
-If you just want to see the videos or images, you can download /videos and/or /images
+3. Run the application.
+
+If you just want to see the videos or images from 2020 to 2022, you can download /videos and/or /images
 
