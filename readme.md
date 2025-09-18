@@ -18,22 +18,18 @@ Special thanks to: https://www.relataly.com/visualize-covid-19-data-on-a-geograp
 ## FILES OVERVIEW
 All static images and videos can be found at /videos and /images.
 
-* Getdata.py: this file obtains the data from the API stated above (la narrativa) and outputs the data into a GENERAL.JSON file. In that json, each key is a date that has associated another dictionary of country:cases (that day). Specific json files for each day are also created and can be found at /JSONS. This was done to prevent needing API calls when using the API as the result is too slow. 
-* Utils.py: this file obtains some arrays necessary in main.py. It obtains all iso2 and iso3 codes and creates a dict matching them to the population. 
-* Main.py: it has several parts:
-    * dataInDay class: map to create the map of a given region on a given day of a given type. Regions, types and days specifications can be found in the code. It uses geopandas to plot the data and saves the map. To retrieve covid cases it uses general.json. It contains the functions to obtain relative cases, average 5 days cases...
+* Main.py: based on the JSON file created with getdata.py, it creates maps, videos and images.
+    * dataInDay class: to create the map of a given region on a given day and a given type. It uses geopandas to plot the data and saves the map. It has functions to obtain the key relevannt information including relative cases, average 5 days cases and more
     * Video class: it creates a video that is a sequence of all the images of a given region and type
     * Runsimutaion: creates all images of all possible days with a given region and type
+      
+* Getdata.py: it obtains the data from the API stated above (la narrativa) and outputs the formatted data into a GENERAL.JSON file
+* Utils.py: it matches iso3 and iso3 codes with population data
 
 
-* Web application:
-    * Views.py: renders the necessary templates and has an API route that returns a json with keys being the days from the specified range and values being dict of country of the region and covid cases (or other specified parameters). This data is then used to create the charts. 
-    * Javascript files for all urls that render the images, videos or charts with the specified parameters. Videos and images are taken from /static. Charts are created with chart.js and it calls the API route in views.py
-    * Templates for all urls (index, videos, images, charts and aboutData) and a layout
-    * Css for all urls
+* Web application: to create an interactive and intuitive platform. It was created using django.
 
 ## Installation guide
-
 The url is no longer active. Therefore, in order to see results follow the following steps:
 1. Download the code and install requirements with pip install -r requirement.txt
 2. Copy the /images and /video directories into /webapplication/covid/visualitation/static
