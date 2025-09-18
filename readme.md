@@ -1,12 +1,13 @@
 # COVID VISUALISATION TOOL
 
-This is a covid visualisation tool. The end result can be found in this url: This url is no longer available. To see results please reference "installation guide" at the end of the readme.
+This is a covid data visualisation tool. It provides an interactive interface that can be used to show the evolution of covid from 2020 to 2022. 
+The web application can be found in this here: *This url is no longer available, please reference "installation guide" at the end of the readme.* The videos and images that were created can me found in this repository without need to use the webapp. 
 
 ## OVERVIEW
 In this web application users can view data in several ways:
 * Videos of the evolution of covid in a specific continent (not all continents are supported) from the start of 2020 till march of 2022. You can view the cases, cases by 100.000 people and average cases by 100.000 people in last 5 days
-* Maps: you can search for any of the images that was shown in the videos
-* Charts: charts are made automatically based on the requested parameters. 
+* Maps: you can search for all images shown on the videos
+* Charts: charts are made automatically based on the requested parameters. You can view the information of the videos in a intuitive such as on a bar chart
 
 ## DATA
 Covid cases were obtained using this API: https://covid19tracking.narrativa.com/
@@ -35,7 +36,7 @@ All static images and videos can be found at /videos and /images.
 
 The url is no longer active. Therefore, in order to see results follow the following steps:
 1. Download the code and install requirements with pip install -r requirement.txt
-2. Copy the /images and /video directories into /webapplication/covid/visualitation/static. (Images and videos were deleted there to avoid repetition and due to maximun size requirements in repositories). 
+2. Copy the /images and /video directories into /webapplication/covid/visualitation/static
 3. Run the application with python manage.py runserver
 
 If you just want to see the videos or images, you can download /videos and/or /images
