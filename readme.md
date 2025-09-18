@@ -2,7 +2,7 @@
 
 This is a covid data visualisation tool. It provides an interactive and intuitive interface that can be used to show the evolution of covid around the world. 
 The web application can be found here: *This url is no longer available, please reference "installation guide" at the end of the readme.* 
-The videos and images from the start of 2020 to 2022 can be found in this repository without need to use the web app. 
+The videos and images from the start of 2020 to 2022 can be found in this repository without need to use the web app or run any file. 
 
 ## OVERVIEW
 In this web application users can view data in several ways:
