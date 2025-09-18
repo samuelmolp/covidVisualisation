@@ -1,4 +1,4 @@
-# COVID VISUALISATION TOOL
+# COVID VISUALISATION APP
 
 This is a covid data visualisation tool. It provides an interactive and intuitive interface that can be used to show the evolution of covid around the world. 
 The web application can be found here: *This url is no longer available, please reference "installation guide" at the end of the readme.* 
